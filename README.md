@@ -7,31 +7,31 @@ Quick Start
 
 ### 1. Create Modal
 
-    <div class="modal"></div>
+    <div class="se-modal"></div>
 	
 This is really all the markup you'll need. The rest is good old fashioned HTML.
 That being said, I would suggest starting with a heading element (h1, h2, h3, h4, h5), use a small &times; character, and have a button. Here's an example:
 	
-    <div class="modal">
+    <div class="se-modal">
       <h2>
       	Title
-      	<small>&times;</small>
+      	<small class="close">&times;</small>
       </h2>
       <p>Hello world</p>
-      <button>Save</button>
+      <a href="#" class="btn btn-primary">Save</a>
     </div>
     
 ### 2. Add CSS
 
-    <link rel="stylesheet" href="sem-modal.css" />
+    <link rel="stylesheet" href="se-modal.css" />
 
 ### 3. Add JavaScript (jQuery required)
 
-	$(':not(.modal)').not('.modal *').click(function() {
-		return $('.modal[style="display: block;"]').fadeOut('fast');
-	}).children().click(function(e) {
-		return false;
-	});
+  $(':not(.se-modal)').not('.se-modal *').click(function() {
+    return $('.se-modal[style="display: block;"]').fadeOut('fast');
+  }).children().click(function(e) {
+    return false;
+  });
 	
 	
 All this will do is allow the modal to be dismissed when clicked outside.
@@ -44,13 +44,13 @@ Rather than reinvent the wheel, Just make the modal appear and disappear with jQ
 	
     <button>Show Modal</button>
 
-    <div class="modal">
+    <div class="se-modal">
       <h2>
       	Title
       	<small>&times;</small>
       </h2>
       <p>Hello world</p>
-      <button>Save</button>
+      <a href="#" class="btn btn-primary">Save</a>
     </div>
 	
 **jQuery**
@@ -59,13 +59,13 @@ Rather than reinvent the wheel, Just make the modal appear and disappear with jQ
     <script>
 
       // Show Modal
-      $('button').click(function() {
-        $('.modal').fadeIn('fast');
+      $('.btn').click(function() {
+        $('.se-modal').fadeIn('fast');
       })
 
       // Hide Modal
-      $('.modal small, .modal button').click(function() {
-        $('.modal').fadeOut('fast');
+      $('.se-modal .close, .se-modal .btn').click(function() {
+        $('.se-modal').fadeOut('fast');
       })
 
     </script>
