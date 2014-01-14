@@ -1,6 +1,6 @@
 # [Demo](http://codepen.io/ajkochanowicz/pen/FDlJi)
 
-A clever and highly useful trick to creating a modal with just one html element. Clocks in at under 1kb and intuitively uses basic jQuery to operate. It's not a library, it's a snippet.
+A clever and highly useful trick to creating a modal with just one html element. It's not a library; it's a snippet.
 
 Quick Start
 -----------
