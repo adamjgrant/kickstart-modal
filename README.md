@@ -47,7 +47,7 @@ Rather than reinvent the wheel, Just make the modal appear and disappear with jQ
     <div class="se-modal">
       <h2>
       	Title
-      	<small>&times;</small>
+      	<small class="close">&times;</small>
       </h2>
       <p>Hello world</p>
       <a href="#" class="btn btn-primary">Save</a>
