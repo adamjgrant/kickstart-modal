@@ -42,7 +42,7 @@ Rather than reinvent the wheel, Just make the modal appear and disappear with jQ
 	
 **HTML**
 	
-    <button>Show Modal</button>
+    <a href="#" class="btn">Show Modal</a>
 
     <div class="se-modal">
       <h2>
