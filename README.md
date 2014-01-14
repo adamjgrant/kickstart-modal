@@ -27,11 +27,11 @@ That being said, I would suggest starting with a heading element (h1, h2, h3, h4
 
 ### 3. Add JavaScript (jQuery required)
 
-  $(':not(.se-modal)').not('.se-modal *').click(function() {
-    return $('.se-modal[style="display: block;"]').fadeOut('fast');
-  }).children().click(function(e) {
-    return false;
-  });
+    $(':not(.se-modal)').not('.se-modal *').click(function() {
+      return $('.se-modal[style="display: block;"]').fadeOut('fast');
+    }).children().click(function(e) {
+      return false;
+    });
 	
 	
 All this will do is allow the modal to be dismissed when clicked outside.
