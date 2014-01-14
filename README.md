@@ -1,4 +1,4 @@
-# [Demo](http://codepen.io/ajkochanowicz/pen/peuFE)
+# [Demo](http://codepen.io/ajkochanowicz/pen/cejBA)
 
 A clever and highly useful trick to creating a modal with just one html element.
 
