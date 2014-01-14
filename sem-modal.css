@@ -1,0 +1,32 @@
+.modal {
+  display: none;
+  width: 500px;
+  left: 50%;
+  top: 25px;
+  margin-left: -250px;
+  min-height: 100px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.4);
+  z-index: 11;
+  padding: 15px;
+  padding-top: 0px;
+  position: fixed;
+  outline: 9999px solid rgba(0,0,0,0.25);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.modal small {
+  float: right;
+  cursor: pointer;
+  color: rgba(0,0,0,0.25);
+}
+.modal button {
+  float: right;
+  margin-left: 5px;
+  background-color: #bada55;
+  padding: 5px 15px;
+  border: 0px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}

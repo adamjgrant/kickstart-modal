@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="sem-modal.css" />
+</head>
+<body>
+
+	<div class="modal">
+	  <h1>Title<small>&times;</small></h1>
+	  <p>Content</p>
+	  <button>Save</button>
+	</div>
+
+	<h1>One element modal v1.0.0</h1>
+	<button>Show Modal</button>
+	<p>By <a href="http://adamux.com">Adam Kochanowicz</a> (Public Domain)</p>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		  $('button').click(function() {
+		    return $('.modal').fadeIn('fast');
+		  });
+
+		  $('small, .modal button').click(function() {
+		    return $('.modal').fadeOut('fast');
+		  });
+
+		  $(':not(.modal)').not('.modal *').click(function() {
+		    return $('.modal[style="display: block;"]').fadeOut('fast');
+		  }).children().click(function(e) {
+		    return false;
+		  });
+	</script>
+
+</body>
+</html>
