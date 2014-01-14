@@ -1,6 +1,6 @@
 # [Demo](http://codepen.io/ajkochanowicz/pen/peuFE)
 
-A clever and highly useful trick to creating a modal with just one html element.
+A clever and highly useful trick to creating a modal with just one html element. Clocks in at under 1kb and intuitively uses basic jQuery to operate.
 
 Quick Start
 -----------
