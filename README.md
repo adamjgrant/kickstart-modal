@@ -1,6 +1,3 @@
-Single-Element-Modal
-====================
-
 # [Demo](http://codepen.io/ajkochanowicz/pen/peuFE)
 
 A clever and highly useful trick to creating a modal with just one html element.
