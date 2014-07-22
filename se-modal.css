@@ -23,6 +23,7 @@
     transform: translateY(0);
   }
 }
+html, body { height: 100%; }
 .se-modal {
   display: none;
   width: 500px;

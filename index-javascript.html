@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="se-modal.css" />
+</head>
+<body>
+
+	<div class="se-modal">
+	  <h3>Hello World<small class="close">&times;</small></h3>
+	  <p>I'm the easiest modal you'll ever use.</p>
+	  <hr>
+	  <p><a href="#" class="btn btn-primary">Save</a></p>
+	</div>
+
+	<h1>One element modal v2.0.0 (Pure JavaScript)</h1>
+	<p><button>Show Modal</button></p>
+	<p><a href="https://github.com/ajkochanowicz/Single-Element-Modal">On GitHub</a></p>
+	<p><a href="#" class="bootstrap">Try with Bootstrap CSS</a></p>
+	<p>By <a href="http://adamux.com">Adam Kochanowicz</a> (Public Domain)</p>
+
+	<script type="text/javascript">
+    var $ = function(el) { return document.querySelectorAll(el); }
+
+    $('button')[0].addEventListener('click', function(e) {
+	    $('.se-modal')[0].style.display = 'block';
+      return e.stopPropagation();
+    })
+
+	  $('.close, .se-modal .btn')[0].addEventListener('click', function() {
+	    return $('.se-modal')[0].style.display = 'none';
+	  });
+
+	  // Allow modal to dismiss when clicked outside
+    $('body')[0].addEventListener('click', function() {
+      return $('.se-modal[style="display: block;"]')[0].style.display = 'none';
+    });
+    $('.se-modal')[0].addEventListener('click', function(e) {
+      return e.stopPropagation();
+    });
+
+	  // Add bootstrap
+    $('.bootstrap')[0].addEventListener('click', function() {
+	    var a = document.createElement('link')
+	    a.rel = 'stylesheet'
+	    a.href = 'http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'
+	    document.head.appendChild(a)
+	  })
+	</script>
+
+</body>
+</html>
