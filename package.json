@@ -1,0 +1,27 @@
+{
+  "name": "kickstart-modal",
+  "version": "1.0.0",
+  "description": "Modal for Kickstart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajkochanowicz/kickstart-modal.git"
+  },
+  "keywords": [
+    "kickstart",
+    "modal"
+  ],
+  "author": "Adam Kochanowicz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajkochanowicz/kickstart-modal/issues"
+  },
+  "homepage": "https://github.com/ajkochanowicz/kickstart-modal",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-coffee": "^2.2.0"
+  }
+}
